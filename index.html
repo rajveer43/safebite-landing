@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeBite — The kitchen's paper trail, made public</title>
+  <meta name="description" content="SafeBite turns restaurant inspections, certificates, and complaints into one public record. Check the file before you eat." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect x=%223%22 y=%222%22 width=%2218%22 height=%2220%22 rx=%221%22 fill=%22%23FAF9F7%22 stroke=%22%230F766E%22 stroke-width=%222%22/><path d=%22M7 8h10M7 12h10M7 16h6%22 stroke=%22%230F766E%22 stroke-width=%222%22/></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <header class="masthead">
+    <div class="frame masthead__row">
+      <a href="#top" class="masthead__mark">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="4" y="3" width="24" height="27" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M9 10h14M9 15h14M9 20h9" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+        </svg>
+        <span>SafeBite</span>
+      </a>
+      <nav class="masthead__nav">
+        <a href="#the-file">The file</a>
+        <a href="#checklist">The checklist</a>
+        <a href="#roles">Who it's for</a>
+      </nav>
+      <a href="#file-a-report" class="btn btn--stamp">Get the app →</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: an actual filled inspection card, not an illustration of the idea -->
+    <section class="hero">
+      <div class="frame hero__grid">
+
+        <div class="hero__intro">
+          <p class="kicker">Public record No. 0142</p>
+          <h1 class="hero__headline">
+            Every kitchen<br />has a file.<br /><span class="hero__headline-accent">Now you can read it.</span>
+          </h1>
+          <p class="hero__dek">
+            SafeBite pulls inspection reports, licenses, and filed complaints into one score
+            per restaurant — so the paperwork that used to sit in a drawer now sits in your pocket.
+          </p>
+          <div class="hero__actions">
+            <a href="#file-a-report" class="btn btn--primary">Get the app</a>
+            <a href="#roles" class="btn btn--outline">I run a restaurant</a>
+          </div>
+        </div>
+
+        <div class="hero__doc" aria-hidden="true">
+          <div class="report-card">
+            <div class="report-card__head">
+              <span>SAFETY RECORD</span>
+              <span class="report-card__id">FILE #SR-04471</span>
+            </div>
+
+            <div class="report-card__body">
+              <div class="report-card__row report-card__row--name">
+                <span class="report-card__label">Establishment</span>
+                <span class="report-card__value">Spice Route Kitchen</span>
+              </div>
+              <div class="report-card__row">
+                <span class="report-card__label">Location</span>
+                <span class="report-card__value">MG Road, Bengaluru</span>
+              </div>
+
+              <div class="report-card__divider" role="presentation"></div>
+
+              <div class="report-card__score">
+                <svg class="report-card__ring" viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="ring__track" cx="60" cy="60" r="50" />
+                  <circle class="ring__fill" cx="60" cy="60" r="50" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" />
+                </svg>
+                <div class="report-card__score-text">
+                  <span class="report-card__score-value" id="scoreValue">00</span>
+                  <span class="report-card__score-suffix">/ 100</span>
+                </div>
+              </div>
+
+              <div class="report-card__stamp" id="reportStamp">EXCELLENT</div>
+
+              <div class="report-card__checks">
+                <div class="check-line">
+                  <span class="check-line__box check-line__box--pass" aria-hidden="true">✓</span>
+                  <span>FSSAI license — verified</span>
+                </div>
+                <div class="check-line">
+                  <span class="check-line__box check-line__box--pass" aria-hidden="true">✓</span>
+                  <span>Fire safety cert — verified</span>
+                </div>
+                <div class="check-line">
+                  <span class="check-line__box check-line__box--pass" aria-hidden="true">✓</span>
+                  <span>Last inspection — 34 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THE PROBLEM, told as a redacted case file rather than an icon grid -->
+    <section class="case" id="the-file">
+      <div class="frame">
+        <p class="kicker">Case history</p>
+        <h2 class="section-head">What the dining room doesn't show you</h2>
+
+        <div class="case__ledger">
+          <div class="case__entry">
+            <span class="case__mark">01</span>
+            <div class="case__text">
+              <h3>The kitchen is out of sight, on purpose</h3>
+              <p>A polished dining room says nothing about food handling, cold storage, or what's happening near the fryer. That's the part a menu can't show you.</p>
+            </div>
+          </div>
+          <div class="case__entry">
+            <span class="case__mark">02</span>
+            <div class="case__text">
+              <h3>Licenses lapse quietly</h3>
+              <p>An FSSAI license or fire safety certificate can expire mid-quarter and nobody outside the kitchen finds out — until SafeBite flags it.</p>
+            </div>
+          </div>
+          <div class="case__entry">
+            <span class="case__mark">03</span>
+            <div class="case__text">
+              <h3>Complaints disappear into star ratings</h3>
+              <p>A one-star review about pests gets buried under fifty reviews about the parking. It never reaches anyone who can actually act on it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS — genuinely sequential, kept as a real numbered procedure -->
+    <section class="checklist" id="checklist">
+      <div class="frame">
+        <p class="kicker">Procedure</p>
+        <h2 class="section-head">How a rating gets built</h2>
+        <p class="section-sub">Four steps, in order — the same path an inspector's report takes before it reaches your screen.</p>
+
+        <ol class="procedure">
+          <li class="procedure__step">
+            <span class="procedure__num">01</span>
+            <div class="procedure__body">
+              <h3>Search nearby</h3>
+              <p>Restaurants around you, ranked by distance or by score.</p>
+            </div>
+          </li>
+          <li class="procedure__step">
+            <span class="procedure__num">02</span>
+            <div class="procedure__body">
+              <h3>Read the score</h3>
+              <p>One number out of 100, weighted from inspections, complaints, and certificates on file.</p>
+            </div>
+          </li>
+          <li class="procedure__step">
+            <span class="procedure__num">03</span>
+            <div class="procedure__body">
+              <h3>Open the file</h3>
+              <p>Every certificate, every inspection date, every complaint status — on the record, not summarized away.</p>
+            </div>
+          </li>
+          <li class="procedure__step">
+            <span class="procedure__num">04</span>
+            <div class="procedure__body">
+              <h3>File a report</h3>
+              <p>Something wrong? It goes to an inspector's queue, not a comments section.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ROLES — styled as ID badges / clearance cards, not generic feature cards -->
+    <section class="roles" id="roles">
+      <div class="frame">
+        <p class="kicker">Access levels</p>
+        <h2 class="section-head">Four ways into the same record</h2>
+
+        <div class="badges">
+          <article class="badge badge--customer">
+            <div class="badge__strip"></div>
+            <span class="badge__role">Customer</span>
+            <h3>Order with the file open</h3>
+            <p>See the score before the menu. File a complaint in the same place you found the restaurant.</p>
+          </article>
+          <article class="badge badge--owner">
+            <div class="badge__strip"></div>
+            <span class="badge__role">Owner</span>
+            <h3>Keep your record current</h3>
+            <p>Upload certificates, track your score's inputs, and see exactly what's pulling it down.</p>
+          </article>
+          <article class="badge badge--inspector">
+            <div class="badge__strip"></div>
+            <span class="badge__role">Inspector</span>
+            <h3>File from the field</h3>
+            <p>Log an inspection and resolve a complaint from your phone — no paper, no re-entry.</p>
+          </article>
+          <article class="badge badge--admin">
+            <div class="badge__strip"></div>
+            <span class="badge__role">Admin</span>
+            <h3>Watch the whole district</h3>
+            <p>High-risk kitchens, lapsed certificates, and overdue inspections — surfaced automatically.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST — a receipt-style ledger, not stat cards -->
+    <section class="ledger">
+      <div class="frame">
+        <p class="kicker">On the record</p>
+        <div class="ledger__table" role="table" aria-label="What SafeBite tracks">
+          <div class="ledger__row" role="row">
+            <span role="cell">Inspection reports</span>
+            <span role="cell" class="ledger__note">Filed by licensed inspectors, not the restaurant</span>
+          </div>
+          <div class="ledger__row" role="row">
+            <span role="cell">Certificates</span>
+            <span role="cell" class="ledger__note">FSSAI · fire safety · health · hygiene</span>
+          </div>
+          <div class="ledger__row" role="row">
+            <span role="cell">Complaints</span>
+            <span role="cell" class="ledger__note">Tracked from filed to resolved, in the open</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA — styled as the closing line of the report -->
+    <section class="closing" id="file-a-report">
+      <div class="frame closing__inner">
+        <p class="kicker kicker--on-dark">End of record</p>
+        <h2>Eat with the file open.</h2>
+        <p class="closing__sub">SafeBite is opening city by city. Leave your email and we'll file you in.</p>
+        <form class="closing__form" action="mailto:hello@safebite.app" method="get">
+          <label class="visually-hidden" for="emailInput">Email address</label>
+          <input id="emailInput" type="email" name="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn--primary-inverse">Notify me</button>
+        </form>
+        <div class="closing__stores" aria-label="Coming soon to app stores">
+          <span>App Store — filing soon</span>
+          <span>Google Play — filing soon</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <div class="frame colophon__row">
+      <span>SafeBite — hyperlocal food safety, on the record.</span>
+      <nav class="colophon__links">
+        <a href="mailto:hello@safebite.app">Contact</a>
+        <a href="#top">About</a>
+        <a href="#top">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
